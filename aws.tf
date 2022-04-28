@@ -35,6 +35,10 @@ resource "aws_subnet" "subnet" {
 #################################################################################
 resource "aws_vpn_gateway" "vpn_gateway" {
   vpc_id = aws_vpc.vpc.id
+
+  tags = {
+    Name = "aws-gateway-001"
+  }
 }
 
 resource "aws_vpn_gateway_route_propagation" "gateway_route_propagation" {
@@ -94,6 +98,6 @@ resource "aws_vpn_connection" "vpn_connection_secondary" {
   tunnel2_inside_cidr = "169.254.22.4/30"
 
   tags = {
-    Name = "azure-gateway-001-secondary"
+    Name = "azure-vpn-001-secondary"
   }
 }
