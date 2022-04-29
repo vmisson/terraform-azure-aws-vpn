@@ -50,7 +50,7 @@ resource "azurerm_public_ip" "public_ip_gateway_primary" {
 }
 
 resource "azurerm_public_ip" "public_ip_gateway_secondary" {
-  name                = "azure-vnet-002"
+  name                = "azure-pip-002"
   location            = azurerm_resource_group.resource_group.location
   resource_group_name = azurerm_resource_group.resource_group.name
   sku                 = "Standard"
