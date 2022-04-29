@@ -1,7 +1,7 @@
 # Terraform Azure - AWS VPN & BGP
 
 ## Overview
-This project provide some Terraform files to deploy a full VPN connectivity with Azure and AWS and to configure BGP to manage routing dynamicaly.
+This project provide some Terraform files to deploy VPN connectivity between Azure and AWS and to configure BGP to manage routing dynamicaly.
 
 # High Level Design
 - Azure North Europe :
@@ -29,3 +29,7 @@ The infrastructure will be implemented as described in the high level design but
 > terraform plan
 > terraform apply
 ````
+
+## Documentation
+
+You can find more details here about [here](https://blog.cloud63.fr/multicloud-azure-aws-connectivity-using-vpn-and-bgp/)
